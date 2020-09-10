@@ -50,7 +50,7 @@ def kunye (index):
 isimlistesi=[]
 liste=[]
 liste.append(dogs("Karabaş","Akciğer","Etçil","Habitat Seçmiyor",132,45,"Sokak Köpeği"))
-liste.append(dogs("Büşra","Götten","Herbibok","Telefonu olan her yer",167,110,"1"))
+liste.append(dogs("Çomar","Akciğer","Etçil","Kırsal",167,110,"1"))
 for i in range(0,len(liste)):
     isimlistesi.append(liste[i].isim)
 
