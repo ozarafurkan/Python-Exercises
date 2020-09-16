@@ -26,22 +26,23 @@ def Searching (rateLimiter):
     titles = soup.findAll("td", {"class": "titleColumn"})
     rates = soup.findAll("td", {"class": "ratingColumn imdbRating"})
 
-    printCounter = 0
+    printCounter = 0 # For Detetecting if there is no search result
     for title, rate in zip(titles, rates):
         title = title.text
         rate = rate.text
 
-        title = title.strip()
-        title = title.replace("\n", "")
+        title = title.strip() # replacing unnecessary white spaces
+        title = title.replace("\n", "") # replacing unnecessary new lines
 
-        rate = rate.strip()
-        rate = rate.replace("\n", "")
+        rate = rate.strip() # replacing unnecessary white spaces
+        rate = rate.replace("\n", "") # replacing unnecessary new lines
+
 
         if float(rate) >= rateLimiter:
             printCounter += 1
             print("Title : ", title, "Rate : ", rate)
 
-    if printCounter == 0:
+    if printCounter == 0: # Controlling if there is no search result
         print("There is no film in the world has this rate point :) ")
 
 
