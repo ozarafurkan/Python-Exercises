@@ -12,7 +12,7 @@ def ekstra (fonk):
                 print(i)
         fonk(sayilar)
     return wrapped
-
+#tanımlandı
 @ekstra
 def asalliste(sayilar):
     print("Asal sayılar ... ")
