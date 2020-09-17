@@ -14,6 +14,7 @@ for i in range(uzunluk):
         elif Sade_islem[i]==j and (not Sade_islem[i+1].isnumeric() and Sade_islem[i-1].isnumeric() and Sade_islem[i+1]!="("):
             print("Hata2 {}. karakter ".format(i+1))
             sys.exit()
+
     if Sade_islem[i]=="(" and Sade_islem[i+1]==")" :
         print("Hata3(Boş parantez) {}. karakter ".format(i+1))
         sys.exit()
