@@ -1,3 +1,4 @@
+# Problem : https://www.hackerrank.com/challenges/finding-the-percentage/problem
 marks={}
 for i in range(int(input())):
     name,*mark=input().split()
